@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/predict': 'http://localhost:5000',
+      '/predict': 'https://waste-classifier-service.onrender.com',
     },
   },
 });

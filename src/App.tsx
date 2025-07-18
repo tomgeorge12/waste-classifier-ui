@@ -25,7 +25,7 @@ function App() {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/predict', formData);
+      const res = await axios.post('https://waste-classifier-service.onrender.com/predict', formData);
       setPrediction(res.data.predictedLabel);
       setConfidence(res.data.confidence);
     } catch (err) {
